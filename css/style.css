@@ -13,10 +13,10 @@
 
 @layer components {
   .btn {
-    @apply inline-flex items-center gap-2 bg-lime-400 text-[#0a0a0a] font-semibold px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,53,0.3)];
+    @apply inline-flex items-center gap-2 bg-lime-400 text-[#0a0a0a] font-semibold px-7 py-3.5 rounded-full transition-all duration-300 hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:scale-105;
   }
   .btn-ghost {
-    @apply inline-flex items-center gap-2 border border-[#333] text-[#e5e5e5] font-medium px-7 py-3.5 rounded-full transition-all duration-300 hover:border-lime-400 hover:text-lime-400;
+    @apply inline-flex items-center gap-2 border border-[#333] text-[#e5e5e5] font-medium px-7 py-3.5 rounded-full transition-all duration-300 hover:border-lime-400 hover:text-lime-400 hover:scale-105;
   }
   .card {
     @apply bg-[#141414] border border-[#222] rounded-2xl p-8 transition-all duration-300 hover:border-[#333];

@@ -52,61 +52,46 @@
 
   <!-- Services -->
   <section class="pb-32 px-6">
-    <div class="max-w-6xl mx-auto space-y-px">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
       <!-- Service 1 -->
-      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
-        <div>
-          <span class="text-lime-400 font-mono text-sm">01</span>
-          <h2 class="text-3xl font-bold mt-3">Web Design</h2>
-        </div>
-        <div>
-          <p class="text-[#999] text-lg leading-relaxed mb-6">
-            Custom interfaces designed around your brand and your users. We don't use templates &mdash; every layout, color, and interaction is built from scratch.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">UI/UX Design</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Responsive Layouts</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Prototyping</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Brand Systems</span>
-          </div>
+      <div class="card group" data-animate>
+        <span class="text-lime-400 font-mono text-sm">01</span>
+        <h2 class="text-2xl font-bold mt-4 mb-3 group-hover:text-lime-400 transition-colors">Web Design</h2>
+        <p class="text-[#888] leading-relaxed mb-6">
+          Custom interfaces designed around your brand and your users. No templates &mdash; every pixel is intentional.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">UI/UX</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">Responsive</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">Prototyping</span>
         </div>
       </div>
 
       <!-- Service 2 -->
-      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
-        <div>
-          <span class="text-lime-400 font-mono text-sm">02</span>
-          <h2 class="text-3xl font-bold mt-3">Development</h2>
-        </div>
-        <div>
-          <p class="text-[#999] text-lg leading-relaxed mb-6">
-            Clean, performant code that brings your design to life. Static sites, CMS integrations, or custom builds &mdash; we do it all.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">HTML/CSS/JS</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">React / Next.js</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Static Generators</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">CMS Integration</span>
-          </div>
+      <div class="card group" data-animate>
+        <span class="text-lime-400 font-mono text-sm">02</span>
+        <h2 class="text-2xl font-bold mt-4 mb-3 group-hover:text-lime-400 transition-colors">Development</h2>
+        <p class="text-[#888] leading-relaxed mb-6">
+          Clean, performant code that brings your design to life. Static sites, CMS, or custom builds.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">HTML/CSS/JS</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">React</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">CMS</span>
         </div>
       </div>
 
       <!-- Service 3 -->
-      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
-        <div>
-          <span class="text-lime-400 font-mono text-sm">03</span>
-          <h2 class="text-3xl font-bold mt-3">Optimization</h2>
-        </div>
-        <div>
-          <p class="text-[#999] text-lg leading-relaxed mb-6">
-            Speed, SEO, and accessibility. We make sure your site actually works &mdash; loads fast, ranks well, and everyone can use it.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Core Web Vitals</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Technical SEO</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Performance Audits</span>
-            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Analytics</span>
-          </div>
+      <div class="card group" data-animate>
+        <span class="text-lime-400 font-mono text-sm">03</span>
+        <h2 class="text-2xl font-bold mt-4 mb-3 group-hover:text-lime-400 transition-colors">Optimization</h2>
+        <p class="text-[#888] leading-relaxed mb-6">
+          Speed, SEO, and accessibility. Your site loads fast, ranks well, and everyone can use it.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">Core Web Vitals</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">SEO</span>
+          <span class="text-xs border border-[#222] rounded-full px-3 py-1 text-[#666]">Analytics</span>
         </div>
       </div>
     </div>
