@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &mdash; Benwebdev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { lime: { 400: '#a3e635', 300: '#bef264' }, dark: { DEFAULT: '#0a0a0a', card: '#141414', border: '#222' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-lg border-b border-[#1a1a1a]">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-lg font-bold tracking-tight">ben<span class="text-lime-400">webdev</span></a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-[#888]">
+        <a href="index.html" class="hover:text-white transition-colors">Work</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="services.html" class="text-white">Services</a>
+        <a href="portfolio.html" class="hover:text-white transition-colors">Projects</a>
+        <a href="contact.html" class="ml-4 text-[#0a0a0a] bg-lime-400 px-5 py-2 rounded-full font-semibold hover:bg-lime-300 transition-colors">Let's Talk</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-[#888] hover:text-white" aria-label="Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#1a1a1a] bg-[#0a0a0a]">
+      <div class="px-6 py-6 flex flex-col gap-4 text-sm">
+        <a href="index.html" class="text-[#888]">Work</a>
+        <a href="about.html" class="text-[#888]">About</a>
+        <a href="services.html" class="text-white">Services</a>
+        <a href="portfolio.html" class="text-[#888]">Projects</a>
+        <a href="contact.html" class="text-lime-400 font-semibold">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-lime-400 text-sm font-medium tracking-widest uppercase mb-4" data-animate>Services</p>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[0.95] max-w-3xl" data-animate>
+        Everything you need,<br><span class="text-[#555]">nothing you don't.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="pb-32 px-6">
+    <div class="max-w-6xl mx-auto space-y-px">
+      <!-- Service 1 -->
+      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
+        <div>
+          <span class="text-lime-400 font-mono text-sm">01</span>
+          <h2 class="text-3xl font-bold mt-3">Web Design</h2>
+        </div>
+        <div>
+          <p class="text-[#999] text-lg leading-relaxed mb-6">
+            Custom interfaces designed around your brand and your users. We don't use templates &mdash; every layout, color, and interaction is built from scratch.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">UI/UX Design</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Responsive Layouts</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Prototyping</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Brand Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
+        <div>
+          <span class="text-lime-400 font-mono text-sm">02</span>
+          <h2 class="text-3xl font-bold mt-3">Development</h2>
+        </div>
+        <div>
+          <p class="text-[#999] text-lg leading-relaxed mb-6">
+            Clean, performant code that brings your design to life. Static sites, CMS integrations, or custom builds &mdash; we do it all.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">HTML/CSS/JS</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">React / Next.js</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Static Generators</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">CMS Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-[#111] p-10 md:p-14 grid md:grid-cols-[1fr_2fr] gap-8 items-start" data-animate>
+        <div>
+          <span class="text-lime-400 font-mono text-sm">03</span>
+          <h2 class="text-3xl font-bold mt-3">Optimization</h2>
+        </div>
+        <div>
+          <p class="text-[#999] text-lg leading-relaxed mb-6">
+            Speed, SEO, and accessibility. We make sure your site actually works &mdash; loads fast, ranks well, and everyone can use it.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Core Web Vitals</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Technical SEO</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Performance Audits</span>
+            <span class="text-xs bg-[#1a1a1a] border border-[#222] rounded-full px-4 py-1.5 text-[#888]">Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-32 px-6">
+    <div class="max-w-6xl mx-auto text-center" data-animate>
+      <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-8">Ready to start?</h2>
+      <a href="contact.html" class="btn text-lg px-10 py-4">Get in touch
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#1a1a1a] py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-[#666]">
+      <span class="font-semibold text-white">ben<span class="text-lime-400">webdev</span></span>
+      <div class="flex gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Work</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
